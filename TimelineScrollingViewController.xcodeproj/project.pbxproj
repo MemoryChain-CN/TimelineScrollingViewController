@@ -10,6 +10,8 @@
 		4A28CAE4212F748100898161 /* TimelineScrollingViewController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A28CADA212F748100898161 /* TimelineScrollingViewController.framework */; };
 		4A28CAE9212F748100898161 /* TimelineScrollingViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A28CAE8212F748100898161 /* TimelineScrollingViewControllerTests.swift */; };
 		4A28CAEB212F748100898161 /* TimelineScrollingViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A28CADD212F748100898161 /* TimelineScrollingViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4A28CAF5212F755200898161 /* TimelineScrollingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A28CAF4212F755200898161 /* TimelineScrollingViewController.swift */; };
+		4A28CAFB212F77DE00898161 /* UIScrollView+isBouncing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A28CAFA212F77DE00898161 /* UIScrollView+isBouncing.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +31,8 @@
 		4A28CAE3212F748100898161 /* TimelineScrollingViewControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimelineScrollingViewControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A28CAE8212F748100898161 /* TimelineScrollingViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineScrollingViewControllerTests.swift; sourceTree = "<group>"; };
 		4A28CAEA212F748100898161 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A28CAF4212F755200898161 /* TimelineScrollingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineScrollingViewController.swift; sourceTree = "<group>"; };
+		4A28CAFA212F77DE00898161 /* UIScrollView+isBouncing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScrollView+isBouncing.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +77,8 @@
 			children = (
 				4A28CADD212F748100898161 /* TimelineScrollingViewController.h */,
 				4A28CADE212F748100898161 /* Info.plist */,
+				4A28CAF4212F755200898161 /* TimelineScrollingViewController.swift */,
+				4A28CAFA212F77DE00898161 /* UIScrollView+isBouncing.swift */,
 			);
 			path = TimelineScrollingViewController;
 			sourceTree = "<group>";
@@ -148,6 +154,7 @@
 				TargetAttributes = {
 					4A28CAD9212F748100898161 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
 					};
 					4A28CAE2212F748100898161 = {
 						CreatedOnToolsVersion = 9.4.1;
@@ -194,6 +201,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A28CAFB212F77DE00898161 /* UIScrollView+isBouncing.swift in Sources */,
+				4A28CAF5212F755200898161 /* TimelineScrollingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +348,7 @@
 		4A28CAEF212F748100898161 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -357,6 +367,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = me.ricieri.TimelineScrollingViewController;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -365,6 +376,7 @@
 		4A28CAF0212F748100898161 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -391,6 +403,7 @@
 		4A28CAF2212F748100898161 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3W7EDBTJUM;
 				INFOPLIST_FILE = TimelineScrollingViewControllerTests/Info.plist;
@@ -409,6 +422,7 @@
 		4A28CAF3212F748100898161 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3W7EDBTJUM;
 				INFOPLIST_FILE = TimelineScrollingViewControllerTests/Info.plist;
